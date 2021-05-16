@@ -42,7 +42,10 @@ public class Gui {
         JTextField textlvip4000 = new JTextField("      ");
         JTextField textlvip8000 = new JTextField("      ");
         text.setSize(100,70);
-
+        while (Excelparser.allread == 0) {
+            System.out.println(Excelparser.allread);
+            continue;
+        }
         JComboBox combo = new JComboBox(Excelparser.names.toArray());
         combo.setSelectedIndex(0);
         combo.addActionListener(new ActionListener() {

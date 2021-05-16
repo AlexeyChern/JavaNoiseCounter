@@ -13,6 +13,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Excelparser {
+    public static int allread = 0;
     public static List<String> names = new ArrayList<>();
     public static List parse(String fileName) {
         //инициализируем потоки
@@ -54,6 +55,7 @@ public class Excelparser {
                 }
 
 
+
             }
 
 
@@ -79,6 +81,8 @@ public class Excelparser {
         }
 
         //System.out.println(materials);
+        allread = 1;
+
         return materials;
     }
 
